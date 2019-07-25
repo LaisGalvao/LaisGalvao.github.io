@@ -1,0 +1,437 @@
+/*aqui estão os estilos gerais*/
+/*elementos e tags*/
+
+/*****************Resolução p/ telas grandes*************************/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+	border:none;
+	outline: none;
+	box-sizing: border-box; 
+	font-family: 'Montserrat';
+}
+
+body{
+	background: url(../img/bgparallax.jpg)no-repeat fixed center center;
+	animation: fadein 2s; /* Padrão */
+	-webkit-animation: fadein 2s; /* Webkit */
+	-moz-animation: fadein 2s; /* Firefox */
+	-ms-animation: fadein 2s; /* IE */
+}
+
+@keyframes fadein {
+from { opacity: 0.3; }
+to { opacity: 1; } /* Padrão */
+}
+@-moz-keyframes fadein {
+from { opacity: 0.3; }
+to { opacity: 1; } /* Firefox */
+}
+@-webkit-keyframes fadein{
+from { opacity: 0.3; }
+to { opacity: 1; } /* Webkit */
+}
+@-ms-keyframes fadein {
+from { opacity: 0.3; }
+to { opacity: 1; } /* IE */
+}​
+
+a{
+	float: left;
+	margin-left: 555px;
+
+}
+
+a:link{
+	text-decoration: none;
+}
+
+ul li{
+	list-style: none;
+	font-size: 0.9em;
+	margin-left: 45px;
+	float: left;
+	color: #000;
+	padding: 15px;
+	text-align: center;
+}
+
+h3{
+	font-size: 0.9em;
+	text-align: justify;
+}
+
+h1{
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+/*aqui estão os backgrounds*/
+.bgMedium{
+
+	background-color: #eceff1;
+}
+
+.bgClear{
+
+	background-color: #FFF;
+}
+
+.radius{
+
+	border-radius: 15px;
+}
+
+/*estilo do cabeçalho*/
+.cabecalho{
+	z-index: 99;
+	position: fixed;	
+	width: 100%;
+	height: 75px;
+}
+
+/*Menu*/
+.icoMenu{
+	width: 155px;
+	height: 155px;
+	float:left;
+	margin-top: 25px;
+	margin-left: 55px;
+	border-radius: 54px;
+	color:#000;
+	cursor:pointer;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.menu{
+	color: #000;
+	float: left;
+	font-size: 1.9em;
+	width: 75%;
+	height: 55px;
+	margin-top: 5px;
+	margin-left: 25px;
+	display: inline;
+}
+
+/*estilo geral da página*/
+.principal{
+	width: 100%;
+	height: 370px;
+	float: left;
+	margin-top: 120px;
+	padding: 10px;
+}
+
+
+/*estilo do rodapé*/
+.rodape{
+	width: 100%;
+	height: 350px;	
+	float: left;
+	margin-top: 200px;
+}
+
+/*outros estilos*/
+.bloco{
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin-left: 100px;
+}
+
+
+.blocoFoto{	
+	width: 250px;
+	height: 250px;
+	background: url(../img/foto-perfil.png)center center/220px no-repeat;
+	background-color: #FFF;
+	float: left;
+	border-radius: 300px;
+}
+
+img{	
+	width: 750px;
+	height: 350px;
+	float: left;
+	margin-left: 100px;
+}
+
+.blocoRodape{
+	width: 520px;
+	height: 120px;
+	float: left;
+	margin-left: 155px;
+	margin-top: 155px;
+}
+
+.Informacoes a{
+
+	font-size: 4.7em;
+	color:#000;
+	margin-right: 15%;
+	opacity: 0.7;
+}
+
+.Informacoes a:last-child{ 
+	margin-right: 0;
+}
+.Informacoes a:hover{
+
+	opacity: 1;
+}
+
+/**********Aqui começam as media queries, aí que a mágica acontece**********/
+/*****************Resolução p/ telas pequenas*************************/
+@media screen and (min-width: 450px) and (max-width: 570px){
+
+	.principal{
+		width: 100%;
+		height: 370px;
+		float: left;
+		margin-top: 120px;
+	}
+
+    .principal .bloco{
+		width: 400px;
+		height:120px;
+		float: left;
+		margin-bottom: 15px;
+		margin-left: 120px;
+	}
+	
+	.principal .blocoFoto{	
+		width: 110px;
+		height: 110px;
+		background: url(../img/foto-perfil.png)center center/110px no-repeat;
+		background-color: #FFF;
+		float: left;
+		border-radius: 300px;
+	}
+
+	h3{
+		font-size: 0.8em;
+		text-align: justify;
+	}
+
+	.menu{
+		color: #000;
+		float: left;
+		font-size: 2em;
+		width: 75%;
+		height: 55px;
+		margin-top: 5px;
+		margin-left: 15px;
+		display: inline;
+	}
+
+	.rodape{
+	width: 100%;
+	height: 350px;	
+	float: left;
+	margin-top: 200px;
+	}
+
+	.blocoRodape{
+		width: 320px;
+		height: 120px;
+		float: left;
+		margin-left: 155px;
+		margin-top: 155px;
+	}
+
+
+.Informacoes a{
+
+	font-size: 4.7em;
+	color:#000;
+	margin-right: 15%;
+	opacity: 0.7;
+}
+
+.Informacoes a:last-child{ 
+	margin-right: 0;
+}
+.Informacoes a:hover{
+
+	opacity: 1;
+}
+}
+
+/*****************Resolução p/ telas pequenas/médias*************************/
+@media screen and (min-width: 661px) and (max-width: 705px){
+
+	.principal{
+		width: 100%;
+		height: 370px;
+		float: left;
+		margin-top: 120px;
+	}
+
+    .principal .bloco{
+		width: 400px;
+		height:120px;
+		float: left;
+		margin-bottom: 75px;
+		margin-left: 120px;
+	}
+	
+	.principal .blocoFoto{	
+		width: 115px;
+		height: 115px;
+		background: url(../img/foto-perfil.png)center center/115px no-repeat;
+		background-color: #FFF;
+		float: left;
+		border-radius: 300px;
+	}
+
+	h3{
+		font-size: 0.9em;
+		text-align: justify;
+	}
+
+	.menu{
+		color: #000;
+		float: left;
+		font-size: 2em;
+		width: 75%;
+		height: 55px;
+		margin-top: 5px;
+		margin-left: 15px;
+		display: inline;
+	}
+
+	.rodape{
+	width: 100%;
+	height: 350px;	
+	float: left;
+	margin-top: 200px;
+	}
+
+	.blocoRodape{
+		width: 320px;
+		height: 120px;
+		float: left;
+		margin-left: 155px;
+		margin-top: 155px;
+	}
+
+
+.Informacoes a{
+
+	font-size: 4.7em;
+	color:#000;
+	margin-right: 15%;
+	opacity: 0.7;
+}
+
+.Informacoes a:last-child{ 
+	margin-right: 0;
+}
+.Informacoes a:hover{
+
+	opacity: 1;
+}
+}
+
+@media screen and (min-width: 706px) and (max-width: 799px){
+
+	.principal{
+		width: 100%;
+		height: 370px;
+		float: left;
+		margin-top: 120px;
+	}
+
+    .principal .bloco{
+		width: 400px;
+		height:120px;
+		float: left;
+		margin-bottom: 75px;
+		margin-left: 120px;
+	}
+	
+	.principal .blocoFoto{	
+		width: 150px;
+		height: 150px;
+		background: url(../img/foto-perfil.png)center center/150px no-repeat;
+		background-color: #FFF;
+		float: left;
+		border-radius: 300px;
+	}
+
+	h3{
+		font-size: 0.9em;
+		text-align: justify;
+	}
+
+	.menu{
+		color: #000;
+		float: left;
+		font-size: 2em;
+		width: 75%;
+		height: 55px;
+		margin-top: 5px;
+		margin-left: 15px;
+		display: inline;
+	}
+
+	.rodape{
+	width: 100%;
+	height: 350px;	
+	float: left;
+	margin-top: 200px;
+	}
+
+	.blocoRodape{
+		width: 320px;
+		height: 120px;
+		float: left;
+		margin-left: 155px;
+		margin-top: 155px;
+	}
+
+
+.Informacoes a{
+
+	font-size: 4.7em;
+	color:#000;
+	margin-right: 15%;
+	opacity: 0.7;
+}
+
+.Informacoes a:last-child{ 
+	margin-right: 0;
+}
+.Informacoes a:hover{
+
+	opacity: 1;
+}
+}
+/*****************Resolução p/ telas média/grandes*************************/
+@media screen and (min-width: 800px) and (max-width: 999px){
+	.principal{
+		width: 100%;
+		height: 370px;
+		float: left;
+		margin-top: 120px;
+	}
+
+	.principal .bloco{
+		width: 350px;
+		height: 150px;
+		background-color: #FFF;
+		float: left;
+		margin-bottom: 55px;
+	}
+	.principal.blocoFoto{	
+		width: 350px;
+		height: 350px;
+		background: url(../img/foto-perfil.png)center center/220px no-repeat;
+		background-color: #FFF;
+		float: left;
+		border-radius: 300px;
+	}
+}
