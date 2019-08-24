@@ -184,7 +184,7 @@ img{
 }
 
 /**********Aqui começam as media queries, aí que a mágica acontece**********/
-/*****************Resolução p/ telas pequenas*************************/
+/*Telas pequenas (a partir de 450px)*/
 @media screen and (min-width: 450px){
 
 	.principal{
@@ -269,6 +269,7 @@ img{
 }
 }
 
+/*Telas pequenas (a partir de 300px)*/
 @media screen and (min-width: 300px){
 
 	.principal{
@@ -313,11 +314,11 @@ img{
 		display: inline;
 	}
 
-	img{	
-	width: 350px;
+	.bloco img{	
+	width: 300px;
 	height: 250px;
 	float: left;
-	margin-left: 10px;
+	margin-left: -10px;
 	margin-top: 25px;
 }
 
@@ -354,6 +355,7 @@ img{
 }
 }
 
+/*telas médias (a partir de 685px)*/
 @media screen and (min-width: 685px){
 
 	.principal{
@@ -427,7 +429,8 @@ img{
 	opacity: 1;
 }
 }
-/*****************Resolução p/ telas médias*************************/
+
+/*Telas médias (a partir de 800px)*/
 @media screen and (min-width: 800px){
 	.principal{
 		width: 100%;
@@ -454,6 +457,7 @@ img{
 	}
 }
 
+/*Telas médias (a partir de 800px)*/
 @media screen and (min-width: 840px){
 	.principal{
 		width: 100%;
@@ -489,6 +493,8 @@ img{
 
 }
 }
+
+/*Telas médias (a partir de 860px)*/
 @media screen and (min-width: 860px){
 
 	img{	
@@ -501,7 +507,7 @@ img{
 }
 }
 
-/*****************Resolução p/ telas médias*************************/
+/*Telas grandes (a partir de 900px)*/
 @media screen and (min-width: 900px){
 	.principal{
 		width: 100%;
@@ -539,6 +545,7 @@ img{
 }
 }
 
+/*Telas grandes (a partir de 1020px)*/
 @media screen and (min-width: 1020px){
 
 img{	
@@ -546,7 +553,7 @@ img{
 	height: 250px;
 	float: left;
 	margin-left: 25px;
-	margin-top: 120px;
+	margin-top: -120px;
 
 }
 
@@ -562,6 +569,6 @@ img{
 		height:120px;
 		float: left;
 		margin-bottom: 75px;
-		margin-left: 10px;
+		margin-left: 90px;
 	}
 }
