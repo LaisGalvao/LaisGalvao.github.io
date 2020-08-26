@@ -1,0 +1,46 @@
+@import 'resets';
+.topo{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+
+    .nav-link{
+        text-decoration: none;
+        font-size: $tam-fonte-normal;
+    }
+}
+
+.fundo{
+    background: url('../img/bg-jumbotron.jpg') fixed center center;
+    height: 100vh;
+      
+}
+
+.jumbotron{
+    background-color: transparent;
+    color: $sem-cor;
+    text-align: center;
+    font-family: $fonte-padrao;
+
+
+    .lead, .my-4{
+        margin-top: 1.5rem;
+        font-size: $tam-fonte-normal;
+    }
+
+    .display-4{
+        margin-top: 5rem;
+        font-size: $tam-fonte-titulo;
+    }
+}
+.container{
+    height: $tam-padrao;
+    background-color: $sem-cor;
+    position: relative;
+}
+
+.rodape{
+    position: relative;
+    clear: both;
+    background-color: $cor-dark;
+}
