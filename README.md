@@ -1,6 +1,8 @@
 # LaisGalvao.github.io 
 
-Este é meu portfólio pessoal.
+#Em construção!  🚧
+
+Este é meu portfólio pessoal.🖖🏽👩🏾‍💻 🚀
 
 Acesse: https://laisgalvao.github.io/
 
