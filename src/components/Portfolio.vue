@@ -3,6 +3,9 @@
     <figure>
       <img class="img-card" src="../assets/marcio-eletrica.png" alt="" />
     </figure>
+    <span class="p-card">
+      Márcio Elétrica
+    </span>
     <button class="call-action">
       <a
         class="call-link"
@@ -12,12 +15,24 @@
         Ver no GitHub</a
       >
     </button>
+    <button class="call-action">
+      <a
+        class="call-link"
+        href="https://github.com/LaisGalvao/Marcio_Eletrica"
+        target="blank"
+      >
+        Mais informações</a
+      >
+    </button>
   </section>
 
   <section class="card-projetos">
     <figure>
       <img class="img-card" src="../assets/recriando-instagram.png" alt="" />
     </figure>
+    <span class="p-card">
+      Recriando Instagram
+    </span>
     <button class="call-action">
       <a
         class="call-link"
@@ -27,12 +42,24 @@
         Ver no GitHub</a
       >
     </button>
+    <button class="call-action">
+      <a
+        class="call-link"
+        href="https://github.com/LaisGalvao/recriando-instagram"
+        target="blank"
+      >
+        Mais informações</a
+      >
+    </button>
   </section>
 
   <section class="card-projetos">
     <figure>
       <img class="img-card" src="../assets/renovar-estofados.png" alt="" />
     </figure>
+    <span class="p-card">
+      Renovar Estofados
+    </span>
     <button class="call-action">
       <a
         class="call-link"
@@ -42,12 +69,24 @@
         Ver no GitHub</a
       >
     </button>
+    <button class="call-action">
+      <a
+        class="call-link"
+        href="https://github.com/LaisGalvao/Renovar-Estofados"
+        target="blank"
+      >
+        Mais informações</a
+      >
+    </button>
   </section>
 
   <section class="card-projetos">
     <figure>
       <img class="img-card" src="../assets/recriando-netflix.png" alt="" />
     </figure>
+    <span class="p-card">
+      Recriando Netflix
+    </span>
     <button class="call-action">
       <a
         class="call-link"
@@ -57,12 +96,29 @@
         Ver no GitHub</a
       >
     </button>
+    <button class="call-action">
+      <a
+        class="call-link"
+        href="https://github.com/LaisGalvao/recriando-netflix"
+        target="blank"
+      >
+        Mais informações</a
+      >
+    </button>
   </section>
 </template>
 <script>
 export default {};
 </script>
 <style scoped>
+.p-card {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  padding: 0%;
+  width: 90%;
+  font-weight: bold;
+}
 .card-projetos {
   width: 250px;
   height: 300px;
@@ -94,6 +150,7 @@ export default {};
   position: absolute;
   width: 75%;
   height: 30vh;
+  border-radius: 5%;
 }
 
 .call-action {
@@ -101,12 +158,14 @@ export default {};
   background: #350061;
   color: whitesmoke;
   width: 100px;
-  height: 10%;
+  height: 15%;
   border-radius: 5px;
-  position: absolute;
+  position: relative;
   align-content: center;
-  left: 30%;
+  display: inline-block;
   top: 80%;
+  margin: 1%;
+  left: -15%;
 }
 
 .call-action:hover {
@@ -135,9 +194,9 @@ export default {};
     opacity: 0.9;
   }
   .img-card {
-  position: absolute;
-  width: 70%;
-  height: 35vh;
-}
+    position: absolute;
+    width: 70%;
+    height: 35vh;
+  }
 }
 </style>

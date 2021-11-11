@@ -6,7 +6,7 @@
         <h1 style="text-align:center">Olá, meu nome é Laís!👋</h1>
         <span>Esta é uma página em construção!</span>
         <br />
-        <ul style="list-style-type: none; text-align:center;">
+        <ul style="list-style-type:none;text-align:center;padding: 0;margin: 5%;">
           <li class="list-item">
             🔭 Atualmente sou estagiária em desenvolvimento fullstack
           </li>
