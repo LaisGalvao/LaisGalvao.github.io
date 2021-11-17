@@ -1,4 +1,6 @@
 <template>
+  <br /><br />
+  <section><h1>Alguns dos meus projetos realizados</h1></section>
   <section class="card-projetos">
     <figure>
       <img class="img-card" src="../assets/marcio-eletrica.png" alt="" />
@@ -185,7 +187,7 @@ export default {};
 @media screen and (max-width: 619px) {
   .card-projetos {
     width: 310px;
-    height: 300px;
+    height: 370px;
     background: #4cd49b;
     border-radius: 15px;
     position: relative;
@@ -197,6 +199,9 @@ export default {};
     position: absolute;
     width: 70%;
     height: 35vh;
+  }
+  .call-action {
+    left: -13%;
   }
 }
 </style>

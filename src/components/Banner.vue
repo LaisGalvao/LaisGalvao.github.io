@@ -15,7 +15,6 @@
             em: HTML, CSS, JavaScript, e alguns frameworks, como Laravel e
             Vue.js
           </li>
-          <li class="list-item">😄 Pronomes: Ela/dela (She/her)</li>
           <li class="list-item">
             ⚡ Coisas que gosto nas horas vagas: Patinar, andar de skate, tocar
             guitarra, desenhar, ler e comer bastante
@@ -74,7 +73,7 @@ export default {};
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  height: 75vh;
+  height: 80vh;
   width: 100%;
 }
 }

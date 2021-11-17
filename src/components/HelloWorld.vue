@@ -39,12 +39,11 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 619px){
-  
-.card-container {
-  clear: both;
-  margin-top: 80vh;
-  position: relative;
-}
+@media screen and (max-width: 619px) {
+  .card-container {
+    clear: both;
+    margin-top: 80vh;
+    position: relative;
+  }
 }
 </style>
