@@ -1,10 +1,14 @@
 <template>
-    <nav class="nav-header">
-      <ul class="nav-list">
-        <li>Home</li>
-        <li>Artigos</li>
-      </ul>
-    </nav>
+  <nav class="nav-header">
+    <ul class="nav-list">
+      <li>
+        <a href=""><i class="icon icon-home"></i>Home</a>
+      </li>
+      <li>
+        <a href=""><i class="icon icon-artigo"></i>Artigos</a>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
@@ -14,11 +18,30 @@ export default {
 };
 </script>
 <style scoped>
+.icon {
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-top: -5%;
+}
+
+.icon-home {
+  width: 30px;
+  height: 30px;
+  content: url(../assets/home-icon.png);
+}
+
+.icon-artigo {
+  width: 30px;
+  height: 30px;
+  content: url(../assets/doc-icon.png);
+}
+
 .nav-header {
   width: 100%;
   height: 50px;
   background-color: #350061;
-  top: 0
+  top: 0;
 }
 
 .nav-list {
@@ -37,17 +60,15 @@ li {
 }
 @media screen and (min-width: 320px) and (max-width: 468px) {
   li {
-  display: block;
-  margin:0 10px;
-  padding: 2px;
-}
-ul{
-  margin: 0;
-}
-
+    display: block;
+    margin: 0 10px;
+    padding: 2px;
+  }
+  ul {
+    margin: 0;
+  }
 }
 a {
   color: #42b983;
 }
 </style>
-

@@ -9,6 +9,8 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "buefy": "^0.9.13",
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
   },
