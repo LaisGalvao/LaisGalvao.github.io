@@ -73,7 +73,7 @@ export default {};
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
 }
 }

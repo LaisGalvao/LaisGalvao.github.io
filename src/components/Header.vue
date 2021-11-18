@@ -39,7 +39,7 @@ export default {
 
 .nav-header {
   width: 100%;
-  height: 50px;
+  height: 55px;
   background-color: #350061;
   top: 0;
 }
@@ -55,10 +55,21 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 10px 0 0 10px;
+  margin: 15px 0 0 10px;
   position: relative;
 }
 @media screen and (min-width: 320px) and (max-width: 468px) {
+  .icon {
+    display: block;
+    position: absolute;
+    float: left;
+    margin-top: 0%;
+  }
+
+  .icon-home,
+  .icon-artigo {
+    left: calc(25%);
+  }
   li {
     display: block;
     margin: 0 10px;

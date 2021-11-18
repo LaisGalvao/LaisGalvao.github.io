@@ -42,7 +42,7 @@ body {
 @media screen and (max-width: 619px) {
   .card-container {
     clear: both;
-    margin-top: 80vh;
+    margin-top: 100vh;
     position: relative;
   }
 }

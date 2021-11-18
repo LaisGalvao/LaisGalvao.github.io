@@ -123,7 +123,7 @@ export default {};
 }
 .card-projetos {
   width: 250px;
-  height: 300px;
+  height: 290px;
   background: whitesmoke;
   border: 0.9px solid;
   border-color: gray;
@@ -151,7 +151,7 @@ export default {};
 .img-card {
   position: absolute;
   width: 75%;
-  height: 30vh;
+  height: 20vh;
   border-radius: 5%;
 }
 
@@ -184,10 +184,29 @@ export default {};
   color: #350061;
 }
 
-@media screen and (max-width: 619px) {
+@media screen and (min-width: 620px) and (max-width: 980px) {
+   .card-projetos {
+    width: 310px;
+    height: 430px;
+    background: #4cd49b;
+    border-radius: 15px;
+    position: relative;
+    display: inline-flex;
+    margin: 1%;
+    opacity: 0.9;
+  }
+  .img-card{
+    height: 30vh;
+  }
+   .p-card{
+    top: 70%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 619px) {
   .card-projetos {
     width: 310px;
-    height: 370px;
+    height: 300px;
     background: #4cd49b;
     border-radius: 15px;
     position: relative;
@@ -198,10 +217,13 @@ export default {};
   .img-card {
     position: absolute;
     width: 70%;
-    height: 35vh;
+    height: 20vh;
   }
   .call-action {
     left: -13%;
+  }
+  .p-card{
+    top: 70%;
   }
 }
 </style>
