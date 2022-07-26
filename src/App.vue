@@ -4,23 +4,49 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import NavbarComponent from "./layout/NavbarComponent.vue";
 import FooterComponent from "./layout/FooterComponent.vue";
+import CardComponent from "./components/CardComponent.vue";
 </script>
 
 <template>
-  <div>
-    <NavbarComponent />
-    <div class="flex">
-      <a href="https://vitejs.dev" target="_blank">
-        <img src="/vite.svg" class="logo" alt="Vite logo" />
-      </a>
-      <a href="https://vuejs.org/" target="_blank">
-        <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-      </a>
+  <NavbarComponent />
+  <HelloWorld msg="Olá, sou a Laís!" />
+  <div class="py-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div v-for="card in cards" :key="card.title">
+      <CardComponent :title="card.title" :desc="card.desc" :link="card.link" />
     </div>
-    <HelloWorld msg="Vite + Vue (edit edit edit edit edita 🤬)" />
-    <FooterComponent/>
   </div>
+  <FooterComponent />
 </template>
+<script>
+export default {
+  computed: {
+    cards() {
+      return [
+        {
+          title: "Márcio Elétrica",
+          desc: "oi",
+          link: "https://galvaoeletrica.netlify.app/",
+        },
+        {
+          title: "Instagram Clone",
+          desc: "oi",
+          link: "https://laisgram.netlify.app/",
+        },
+        {
+          title: "Netflix CLone",
+          desc: "oi",
+          link: "https://laiscloneflix.netlify.app/",
+        },
+        {
+          title: "Renovar Estofados",
+          desc: "oi",
+          link: "https://renovar-estofados.vercel.app/",
+        },
+      ];
+    },
+  },
+};
+</script>
 
 <style scoped>
 .logo {
