@@ -1,49 +1,40 @@
-<template>
-  <div>
-    <Header />
-    <Banner />
-    <div class="card-container">
-      <Portfolio />
-    </div>
-  </div>
-</template>
+<script setup>
+import { ref } from 'vue'
 
-<script>
-import Header from "./Header.vue";
-import Banner from "./Banner.vue";
-import Portfolio from "./Portfolio.vue";
-export default {
-  name: "HelloWorld",
-  components: {
-    Header: Header,
-    Banner: Banner,
-    Portfolio: Portfolio,
-  },
-  props: {},
-};
+defineProps({
+  msg: String
+})
+
+const count = ref(0)
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<template>
+  <h1>{{ msg }}</h1>
+
+  <div class="card">
+    <button type="button" @click="count++">count is {{ count }}</button>
+    <p>
+      Edit
+      <code>components/HelloWorld.vue</code> to test HMR
+    </p>
+  </div>
+
+  <p>
+    Check out
+    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
+      >create-vue</a
+    >, the official Vue + Vite starter
+  </p>
+  <p>
+    Install
+    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
+    in your IDE for a better DX
+  </p>
+  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+</template>
+
 <style scoped>
-html,
-body {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  width: 100%;
-}
-
-.card-container {
-  clear: both;
-  margin-top: 100vh;
-  position: relative;
-}
-
-@media screen and (max-width: 619px) {
-  .card-container {
-    clear: both;
-    margin-top: 100vh;
-    position: relative;
-  }
+.read-the-docs {
+  color: #888;
 }
 </style>
