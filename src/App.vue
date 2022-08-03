@@ -12,7 +12,13 @@ import CardComponent from "./components/CardComponent.vue";
   <HelloWorld msg="Olá, sou a Laís!" />
   <div class="py-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-4">
     <div v-for="card in cards" :key="card.title">
-      <CardComponent :title="card.title" :desc="card.desc" :link="card.link" />
+      <CardComponent
+        :imgSrc="card.imgSrc"
+        :title="card.title"
+        :desc="card.desc"
+        :link="card.link"
+        :repo="card.repo"
+      />
     </div>
   </div>
   <FooterComponent />
@@ -24,23 +30,35 @@ export default {
       return [
         {
           title: "Márcio Elétrica",
-          desc: "oi",
+          imgSrc:
+            "https://github.com/LaisGalvao/Marcio_Eletrica/blob/master/src/assets/banner/eletrica01.jpg",
+          desc: "Um website voltado para divulgação de serviços de um eletricista residencial.",
           link: "https://galvaoeletrica.netlify.app/",
+          repo: "https://github.com/LaisGalvao/Marcio_Eletrica",
         },
         {
           title: "Instagram Clone",
-          desc: "oi",
+          imgSrc:
+            "https://github.com/LaisGalvao/recriando-instagram/blob/master/img/phone.gif",
+          desc: "Criando uma réplica simples do instagram usando HTML, CSS e Javascript",
           link: "https://laisgram.netlify.app/",
+          repo: "https://github.com/LaisGalvao/recriando-instagram",
         },
         {
           title: "Netflix CLone",
-          desc: "oi",
+          imgSrc:
+            "https://github.com/LaisGalvao/recriando-netflix/blob/main/img/ezgif.com-gif-maker.gif",
+          desc: "Criando um clone da interface da Netflix utilizando HTML, CSS e JavaScript.",
           link: "https://laiscloneflix.netlify.app/",
+          repo: "https://github.com/LaisGalvao/recriando-netflix",
         },
         {
           title: "Renovar Estofados",
-          desc: "oi",
+          imgSrc:
+            "https://github.com/LaisGalvao/Renovar-Estofados/blob/master/src/assets/img/banner/sofa02.jpg",
+          desc: "Um e-commerce criado para meu projeto integrador do curso técnico em 2018",
           link: "https://renovar-estofados.vercel.app/",
+          repo: "https://github.com/LaisGalvao/Renovar-Estofados",
         },
       ];
     },
