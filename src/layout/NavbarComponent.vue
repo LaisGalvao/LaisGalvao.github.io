@@ -1,6 +1,6 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap bg-slate-800 p-6">
-    <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <div @click="$router.push({path: '/'})" class="flex items-center flex-shrink-0 text-white mr-6">
       <svg
         class="fill-current h-8 w-8 mr-2"
         width="54"
@@ -80,7 +80,8 @@
           Contato
         </a>
         <a
-          href="#responsive-header"
+          href="https://laisgalvaodevblog.netlify.app/"
+          target="_blank"
           class="
             block
             mt-4
@@ -95,7 +96,9 @@
       </div>
       <div>
         <a
-          href="#"
+          href="https://github.com/LaisGalvao/LaisGalvao/blob/main/Resume-lais-2022.pdf"
+          target="_blank"
+          download
           class="
             inline-block
             text-sm
@@ -110,7 +113,7 @@
             mt-4
             lg:mt-0
           "
-          >Download</a
+          >Meu currículo aqui</a
         >
       </div>
     </div>

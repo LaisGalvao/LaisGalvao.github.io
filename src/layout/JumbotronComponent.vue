@@ -27,8 +27,8 @@
     >
       <div class="flex justify-center items-center h-full">
         <div class="text-white">
-          <h2 class="font-semibold text-4xl mb-4">Olá, sou Laís Galvão</h2>
-          <h4 class="font-semibold text-xl mb-6">Fullstack dev</h4>
+          <h2 class="font-semibold text-4xl mb-4">Olá, sou Laís Galvão 👋🏽</h2>
+          <h4 class="font-semibold text-xl mb-6">Fullstack developer 👩‍💻</h4>
           <a
             class="
               inline-block
