@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center cursor-pointer">
     <div class="rounded-lg shadow-lg bg-white max-w-sm">
       <a href="#!">
         <img

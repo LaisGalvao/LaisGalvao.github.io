@@ -81,10 +81,12 @@
     </div>
 
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2021 Copyright:
+      © 2021 Copyright: Laís Galvão. Site feito utilizando:
       <a class="text-whitehite" href="https://tailwind-elements.com/"
         >Tailwind Elements</a
-      >
+      > e <a class="text-whitehite" href="https://vuejs.org/"
+        >Vue.js</a
+      > 
     </div>
   </footer>
 </template>

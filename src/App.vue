@@ -11,7 +11,7 @@ import CardComponent from "./components/CardComponent.vue";
   <NavbarComponent />
   <HelloWorld msg="Olá, sou a Laís!" />
   <h1 class="text-center font-bold text-3xl py-8 px-4">Meus projetos </h1>
-  <div class="py-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-4">
+  <div id="projetos" class="py-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-4">
     
     <div v-for="card in cards" :key="card.title">
       <CardComponent
@@ -98,7 +98,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+html{
+  scroll-behavior: smooth !important;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
