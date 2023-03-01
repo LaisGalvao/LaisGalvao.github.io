@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    position: absolute;
+    z-index: 99999999;
+}
+
+.ul-style {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0 5%;
+}
+
+.ul-style li {
+    padding: 1%;
+}
+
+.ul-style a,
+.ul-style a:visited {
+    text-decoration: none;
+    color: #F78DA7;
+}
+
+.ul-style a:hover {
+    color: #9900EF;
+    transition: all 0.5s ease-in-out;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 2% 0 2% 0;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+main {
+    position: relative;
+    top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-image: url(../images/svg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0d1117;
+        color: #c9d1d9;
+    }
+}
+
+/* #0d1117 - cor do tema escuro */
