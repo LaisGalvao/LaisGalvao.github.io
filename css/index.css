@@ -49,9 +49,19 @@ body {
     align-content: center;
 }
 
+.images img {
+    padding: 2%;
+}
+
+
+.images img:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
 main {
     position: relative;
-    top: 25vh;
+    top: calc(100vh - 30vh);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,11 +70,31 @@ main {
     flex-wrap: wrap;
 }
 
+.footer-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+    top: 100%;
+    padding: 5%;
+    background: rgb(213, 91, 190);
+    background: -moz-linear-gradient(273deg, rgba(213, 91, 190, 1) 0%, rgba(153, 14, 237, 1) 100%);
+    background: -webkit-linear-gradient(273deg, rgba(213, 91, 190, 1) 0%, rgba(153, 14, 237, 1) 100%);
+    background: linear-gradient(273deg, rgba(213, 91, 190, 1) 0%, rgba(153, 14, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d55bbe", endColorstr="#990eed", GradientType=1);
+}
+
+.footer-infos .footer-icons:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
 footer {
     background-image: url(../images/svg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -72,6 +102,12 @@ footer {
     body {
         background-color: #0d1117;
         color: #c9d1d9;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        top: calc(100vh - 55vh);
     }
 }
 
