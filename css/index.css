@@ -29,6 +29,7 @@ body {
 .ul-style a:visited {
     text-decoration: none;
     color: #F78DA7;
+    transition: all 0.3s ease-in-out;
 }
 
 .ul-style a:hover {
@@ -51,6 +52,7 @@ body {
 
 .images img {
     padding: 2%;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -87,6 +89,11 @@ main {
 
 .footer-infos .footer-icons:hover {
     transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-icons {
+    transform: scale(1);
     transition: all 0.2s ease-in-out;
 }
 
