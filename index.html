@@ -40,6 +40,10 @@
 <!-- Main Content -->
 <main class="container">
     <!-- Conteúdo principal aqui -->
+    <h2>Serviços Prestados</h2>
+    <ul>
+      <li v-for="service in services" :key="service">{{ service }}</li>
+    </ul>
 </main>
 <!-- Footer -->
 <footer>
