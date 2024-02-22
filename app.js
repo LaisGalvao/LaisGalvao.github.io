@@ -9,7 +9,7 @@ new Vue({
         skills: ['Vue.js', 'WordPress', 'Laravel', 'SASS', 'Nuxt', 'React', 'SEO', 'UX/UI'],
         contactEmail: 'dev.laisgalvao@gmail.com'
       },
-      experience: [
+      experiences: [
         {
           company: 'Shinier Soluções Tecnológicas',
           role: 'Desenvolvedor Full Stack',
@@ -29,7 +29,7 @@ new Vue({
           description: 'Realizei reparos e suporte técnico em equipamentos de microinformática, além de configurar redes de computadores e oferecer manutenção preventiva.'
         }
       ],
-      volunteerExperience: [
+      volunteerExperiences: [
         {
           company: 'AACD',
           role: 'Criadora de conteúdo',
