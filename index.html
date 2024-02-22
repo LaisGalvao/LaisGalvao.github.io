@@ -38,18 +38,21 @@
 <!-- Main Content -->
 <main class="container">
     <!-- Conteúdo principal aqui -->
+    <div class="about">
+        {{ about }}
+    </div>
     <div class="services">
     <h2>Serviços Prestados</h2>
     <ul>
-      <li v-for="service in services" :key="service">{{ service }}</li>
+      <li v-for="(service, index) in services" :key="index">{{ service }}</li>
     </ul>
     <h2>Experiências profissionais:</h2>
     <ul>
-      <li v-for="experience in experiences" :key="experience">{{ service }}</li>
+      <li v-for="(experience, index) in experiences" :key="index">{{ service }}</li>
     </ul>
     <h2>Trabalho voluntário:</h2>
     <ul>
-      <li v-for="volunteerExperience in volunteerExperiences" :key="volunteerExperience">{{ service }}</li>
+      <li v-for="(volunteerExperience, index) in volunteerExperiences" :key="index">{{ service }}</li>
     </ul>
 </div>
 </main>
