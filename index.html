@@ -48,11 +48,11 @@
     </ul>
     <h2>Experiências profissionais:</h2>
     <ul>
-      <li :v-for="(experience, index) in experiences" :key="index">{{ service }}</li>
+      <li :v-for="(experience, index) in experiences" :key="index">{{ experience }}</li>
     </ul>
     <h2>Trabalho voluntário:</h2>
     <ul>
-      <li :v-for="(volunteerExperience, index) in volunteerExperiences" :key="index">{{ service }}</li>
+      <li :v-for="(volunteerExperience, index) in volunteerExperiences" :key="index">{{ volunteerExperience }}</li>
     </ul>
 </div>
 </main>
@@ -72,7 +72,7 @@
 
         </div>
       
-        <script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script src="app.js"></script>
       </body>
 </html>

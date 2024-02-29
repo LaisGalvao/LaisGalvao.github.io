@@ -1,5 +1,4 @@
-import 'vue';
-new Vue({
+var app = new Vue({
     el: '#app',
     data: {
       services: ['Desenvolvimento web', 'Treinamento', 'Web design', 'Design de experiência do usuário (UX)', 'Copywriting'],
